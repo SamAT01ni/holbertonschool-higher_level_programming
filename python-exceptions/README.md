@@ -10,12 +10,10 @@ and the horse just disappears
 
 ---
 
-## This is because of the Rene Descartes quote **"I think, therefore I am"**
+### This is because of the Rene Descartes quote **"I think, therefore I am"**
 
 However, the horse didnt think, so it wasnt.
 
----
-
-I could have said this part first, but that would be putting Descarted before the horse
+I could have said this part first, but that would be putting Descartes before the horse
 
 *thank you for your time*
