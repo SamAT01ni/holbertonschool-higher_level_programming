@@ -1,0 +1,21 @@
+``Text Indentation`` module
+===========================
+
+>>> ti = __import__("5-text_indentation").text_indentation
+
+>>> ti("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo?")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<BLANKLINE>
+Quonam modo?
+<BLANKLINE>
+
+>>> ti("syntaxless")
+syntaxless
+
+>>> ti("   leading space.    new line")
+   leading space.
+<BLANKLINE>
+new line
+
+>>> ti("")
+
