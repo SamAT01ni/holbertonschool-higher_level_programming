@@ -6,7 +6,8 @@ I changed the colours on my terminal and its a bad decision
 
 
 class Rectangle:
-    """ thats right, it goes in the *square* hole"""
+    """ thats right, it goes in the *square* hole
+    """
 
     def __init__(self, width=0, height=0):
         self.width = width
@@ -41,6 +42,6 @@ class Rectangle:
         return self.__height * self.__width
 
     def perimeter(self):
-        if self.__height is 0  or self.__width is 0:
+        if self.__height is 0 or self.__width is 0:
             return 0
         return (self.__height * 2) + (self.__width * 2)
