@@ -9,8 +9,8 @@ class Square:
     """It goes in the square hole"""
 
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -33,8 +33,10 @@ class Square:
     def position(self, value):
         if type(value) is not tuple or len(value) is not 2 or \
                 not all([type(i) is int for i in value]) or \
-                not all(i >= 0 for i in value):
+                not all([i >= 0 for i in value]):
             raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            self.__position = value
 
     def area(self):
         return self.__size * self.__size
