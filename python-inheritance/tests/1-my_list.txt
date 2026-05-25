@@ -19,5 +19,6 @@
 [1, 2, 3, 4, 5]
 
 >>> ml.append("tickle my toes")
+>>> ml.print_sorted()
 Traceback (most recent call last):
 TypeError: '<' not supported between instances of 'str' and 'int'
