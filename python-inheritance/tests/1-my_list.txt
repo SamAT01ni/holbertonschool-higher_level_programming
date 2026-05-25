@@ -1,0 +1,23 @@
+"Sort list" module
+==================
+
+>>> MyList = __import__('1-my_list').MyList
+
+>>> ml = MyList()
+>>> ml
+[]
+
+>>> ml.append(1)
+>>> ml.append(4)
+>>> ml.append(2)
+>>> ml.append(3)
+>>> ml.append(5)
+>>> ml
+[1, 4, 2, 3, 5]
+
+>>> ml.print_sorted()
+[1, 2, 3, 4, 5]
+
+>>> ml.append("tickle my toes")
+Traceback (most recent call last):
+TypeError: '<' not supported between instances of 'str' and 'int'
