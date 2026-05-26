@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 """
 This is a recctangle module
 Getting deja vu yet?
