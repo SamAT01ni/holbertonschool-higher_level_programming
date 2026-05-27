@@ -1,15 +1,20 @@
 #!/usr/bin/python3
-from abc import ABC, abstractmethod
-from math import pi
 """
 Module for more shapes
-Abstract methods are also present
+Abstract methods are also present,
+
+We have circles and rectangles and also a lovely shape info fucntion
+isnt that splendid
 """
+from abc import ABC, abstractmethod
+from math import pi
 
 
 class Shape(ABC):
     """ Class for shapes
+        get them initialied
         """
+
     @abstractmethod
     def area(self):
         """ This is an area"""
@@ -26,7 +31,8 @@ class Circle(Shape):
         it knows how to get around
         its got a radius from centre to rim
         """
-    def __init__(self, radius):
+
+    def __init_ _(self, radius):
         """ constructs the radius"""
         self.radius = radius
 
@@ -36,11 +42,12 @@ class Circle(Shape):
 
     def perimeter(self):
         """perimeter of a circle"""
-        return pi * 2 * self.radius
+        return 2 * pi * self.radius
 
 
 class Rectangle(Shape):
     """ I am rectangular
+        and noone can take it away
         """
     def __init__(self, width, height):
         "construct the rectangle"""
