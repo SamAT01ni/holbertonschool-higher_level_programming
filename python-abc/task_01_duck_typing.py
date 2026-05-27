@@ -1,69 +1,58 @@
-#!/usr/bin/env python3
-"""
-Module for more shapes
-Abstract methods are also present,
+#!/usr/bin/python3
+"""Abstract classes task 0"""
 
-We have circles and rectangles and also a lovely shape info fucntion
-isnt that splendid
-"""
 from abc import ABC, abstractmethod
 import math
 
 
 class Shape(ABC):
-    """ Class for shapes
-        get them initialied
-        """
+    """Abstract base class representing a geometric shape."""
+
     @abstractmethod
     def area(self):
-        """ This is an area"""
+        """Return the area of the shape."""
         pass
 
     @abstractmethod
     def perimeter(self):
-        """ perimeter is taking a walk around"""
+        """Return the perimeter of the shape."""
         pass
 
 
 class Circle(Shape):
-    """ This is a circle
-        it knows how to get around
-        its got a radius from centre to rim
-        """
+    """Class representing a circle."""
+
     def __init__(self, radius):
-        """ constructs the radius"""
+        """Initialize a circle with a given radius."""
         self.radius = radius
 
     def area(self):
-        """area of a circle """
+        """Return the area of the circle."""
         return math.pi * (self.radius ** 2)
 
     def perimeter(self):
-        """perimeter of a circle"""
+        """Return the perimeter (circumference) of the circle."""
         return 2 * math.pi * self.radius
 
 
 class Rectangle(Shape):
-    """ I am rectangular
-        and noone can take it away
-        """
+    """Class representing a rectangle."""
+
     def __init__(self, width, height):
-        """construct the rectangle"""
+        """Initialize a rectangle with a width and height."""
         self.width = width
         self.height = height
 
     def area(self):
-        """ area of a rectangle"""
+        """Return the area of the rectangle."""
         return self.width * self.height
 
     def perimeter(self):
-        """ perimeter of a rectangle"""
+        """Return the perimeter of the rectangle."""
         return 2 * (self.width + self.height)
 
 
 def shape_info(shape):
-    """ If it talks and walks like a shape,
-        its a shape
-        """
+    """Print the area and perimeter of a shape."""
     print("Area: {}".format(shape.area()))
     print("Perimeter: {}".format(shape.perimeter()))
