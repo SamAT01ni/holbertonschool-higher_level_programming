@@ -7,7 +7,7 @@ We have circles and rectangles and also a lovely shape info fucntion
 isnt that splendid
 """
 from abc import ABC, abstractmethod
-from math import pi
+import math
 
 
 class Shape(ABC):
@@ -32,17 +32,17 @@ class Circle(Shape):
         its got a radius from centre to rim
         """
 
-    def __init_ _(self, radius):
+    def __init__(self, radius):
         """ constructs the radius"""
         self.radius = radius
 
     def area(self):
         """area of a circle """
-        return pi * (self.radius ** 2)
+        return math.pi * (self.radius ** 2)
 
     def perimeter(self):
         """perimeter of a circle"""
-        return 2 * pi * self.radius
+        return 2 * math.pi * self.radius
 
 
 class Rectangle(Shape):
