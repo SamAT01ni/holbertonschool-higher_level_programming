@@ -12,10 +12,12 @@ class Shape(ABC):
         """
     @abstractmethod
     def area(self):
+        """ This is an area"""
         pass
 
     @abstractmethod
     def perimeter(self):
+        """ perimeter is taking a walk around"""
         pass
 
 
@@ -25,12 +27,15 @@ class Circle(Shape):
         its got a radius from centre to rim
         """
     def __init__(self, radius):
+        """ constructs the radius"""
         self.radius = radius
 
     def area(self):
+        """area of a circle """
         return pi * (self.radius ** 2)
 
     def perimeter(self):
+        """perimeter of a circle"""
         return pi * 2 * self.radius
 
 
@@ -38,13 +43,16 @@ class Rectangle(Shape):
     """ I am rectangular
         """
     def __init__(self, width, height):
+        "construct the rectangle"""
         self.width = width
         self.height = height
 
     def area(self):
+        """ area of a rectangle"""
         return self.width * self.height
 
     def perimeter(self):
+        """ perimeter of a rectangle"""
         return 2 * (self.width + self.height)
 
 
