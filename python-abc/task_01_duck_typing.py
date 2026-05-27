@@ -50,7 +50,7 @@ class Rectangle(Shape):
         and noone can take it away
         """
     def __init__(self, width, height):
-        "construct the rectangle"""
+        """construct the rectangle"""
         self.width = width
         self.height = height
 
