@@ -52,5 +52,5 @@ def shape_info(shape):
     """ If it talks and walks like a shape,
         its a shape
         """
-    print(f"Area: {shape.area()}")
-    print(f"Perimeter: {shape.perimeter()}")
+    print("Area: {}".format(shape.area()))
+    print("Perimeter: {}".format(shape.perimeter()))
