@@ -9,7 +9,7 @@ class Fish:
     """ Class is fish, and fish are class"""
     def swim(self):
         print("The fish is swimming")
-    def habitat(self)
+    def habitat(self):
         print("The fish lives in the water")
 
 class Bird:
