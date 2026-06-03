@@ -7,12 +7,12 @@ import sys
 save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
 load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 f = "add_item.json"
-l = []
+list1 = []
 
 try:
-    l = load_from_json_file(f)
+    list1 = load_from_json_file(f)
 except FileNotFoundError:
-    l = []
+    list1 = []
 
-l.extend(sys.argv[1:])
-save_to_json_file(l, f)
+list1.extend(sys.argv[1:])
+save_to_json_file(list1, f)
