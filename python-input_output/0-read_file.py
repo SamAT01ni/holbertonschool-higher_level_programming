@@ -3,6 +3,7 @@
 what else
 """
 
+
 def read_file(filename=""):
     """ uses with, opens files """
     with open(filename, encoding="utf-8") as f:
