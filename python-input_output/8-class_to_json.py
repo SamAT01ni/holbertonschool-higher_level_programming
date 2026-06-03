@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Hello. Today we get dict description with some json serielisation or something """
+""" Hello. Today we get dict description with some
+json serielisation or something """
 
 
 import json
