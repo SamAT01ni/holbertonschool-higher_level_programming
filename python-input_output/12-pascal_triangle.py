@@ -14,5 +14,5 @@ def pascal_triangle(n):
             val = 1
             if j < i and i > 0 and j > 0:
                 val = pascal[i - 1][j] + pascal[i - 1][j - 1]
-            pt[i][j] = val
+            pascal[i][j] = val
     return pascal
