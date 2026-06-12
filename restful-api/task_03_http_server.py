@@ -17,13 +17,13 @@ class Handler(handler):
             self.wfile.write(b"Hello, this is a simple API!")
         elif self.path == "/data":
             self.send_response(200)
-            self.send_header("Content_type", "application/json")
+            self.send_header("Content-Type", "application/json")
             self.end_headers()
             dataset = {"name": "John", "age": 30, "city": "New York"}
             self.wfile.write(json.dumps(dataset).encode("utf-8"))
         elif self.path == "/status":
             self.send_response(200)
-            self.send_header("Content-type", "application/json")
+            self.send_header("Content-Type", "application/json")
             self.end_headers()
             self.wfile.write(b"OK")
         else:
