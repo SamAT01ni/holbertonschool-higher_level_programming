@@ -1,0 +1,2 @@
+-- Task 12 update bobs score, personally tho i HATE bob
+UPDATE second_table SET score = 10 WHERE name = "Bob";
