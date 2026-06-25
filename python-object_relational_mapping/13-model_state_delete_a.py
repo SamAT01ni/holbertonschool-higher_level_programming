@@ -19,13 +19,10 @@ if __name__ == "__main__":
     session = Session()
     states = (
             session.query(State).
-            where(State.name.contains('a'))
-            .order_by(State.id)
+            filter(State.name.like('%a%'))
             .all()
     )
-    if states is not None:
-        for state in states:
-            print("{}: {}".format(state.id, state.name))
-    else:
-        print("Not found")
+    for state in states:
+        session.delete(state)
+    session.commit()
     session.close()
