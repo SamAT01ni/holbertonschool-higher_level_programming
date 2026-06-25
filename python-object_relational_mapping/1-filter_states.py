@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Listing all states from a database connecting to an sql server 
+""" Listing all states from a database connecting to an sql server
     and now only listing ones starting with N """
 
 
