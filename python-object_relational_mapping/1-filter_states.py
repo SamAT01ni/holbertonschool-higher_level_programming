@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Listing all states from a database connecting to an sql server
-    and now only listing ones starting with N """
+and now only listing ones starting with N """
 
 
 import MySQLdb
@@ -15,9 +15,10 @@ if __name__ == "__main__":
         password=sys.argv[2],
         db=sys.argv[3]
     )
-    c = db.cursor()
-    c.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC")
-    rows = c.fetchall()
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM states WHERE name
+                   LIKE BINARY 'N%' ORDER BY id ASC")
+    rows = cursor.fetchall()
     for row in rows:
         print(row)
     c.close()
