@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Listing all states from a database connecting to an sql server """
+
+
 import MySQLdb
 import sys
 
