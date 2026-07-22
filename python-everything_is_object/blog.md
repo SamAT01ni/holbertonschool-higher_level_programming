@@ -40,10 +40,12 @@ and to return the memory address (id) you can do:
 
 ## Immutable objects
 
+
 ### Int
 say we have 2 integers, a and b. Let `a = 89` and `b = 89`.
 
 a and b both **point** to the same object. If we said `b = a` then they still point to the same object. However, if we then said `b = a + 1`, they no longer do as integers are **immutable**. The value of `b` has been altered so it no longer points to the same object.
+
 
 ### Str
 
@@ -70,6 +72,7 @@ False
 As they have the same value, the the `is` keyword points to the objects address which are not the same, but the `==` just compares values.
 
 ## Mutable objects
+
 
 ### Lists
 This is the same way that if we used a **mutable** object, a list:
