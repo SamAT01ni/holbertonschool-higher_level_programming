@@ -54,3 +54,5 @@ The same will happen with strings, another immutabale object. If we say:
 True
 ```
 The 2 strings both point to the same object of `banana` to save memory. 2 strings with identical values will point to the same object.
+
+![Image of 2 strings pointing to same object](banana.png)
