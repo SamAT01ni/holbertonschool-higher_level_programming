@@ -38,8 +38,7 @@ and to return the memory address (id) you can do:
 
 ---
 
-## Immutable objects
-
+## Immutable objects
 
 Int
 
